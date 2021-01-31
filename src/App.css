@@ -50,7 +50,9 @@ body{
   }
 }
 /******************NavBar**********************/
-
+.navbar{
+  z-index:2;
+}
 .logo{
   width: 6rem;
 }
@@ -114,6 +116,7 @@ border-top: 00.1875rem solid var(--primary-dark);
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 1;
 }
 
 .main-info h1{
@@ -136,4 +139,19 @@ padding: 0.625rem 0.75rem 0.75rem 0.75rem;
 color: var(--primary-white);
 margin: 2rem;
 
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: .2s ease-in-out;
+}
+
+/**************************Particle**********/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  widows: 100vw;
+  z-index: 1;
 }
